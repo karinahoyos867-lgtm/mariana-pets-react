@@ -1,0 +1,187 @@
+
+/* Estilos generales de Mariana Pets */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4e3b31;
+  background: #fdf8f3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: #8b5e3c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  width: min(100% - 32px, 1000px);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.encabezado {
+  padding: 28px 20px;
+  text-align: center;
+  background: #f3e5d8;
+  border-radius: 8px;
+  border-bottom: 4px solid #8b5e3c;
+}
+
+.encabezado h1 {
+  margin: 0 0 10px;
+  color: #6d4c41;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.encabezado p {
+  margin: 0;
+}
+
+.tarjeta {
+  margin: 28px auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #ead9ca;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgb(80 55 35 / 8%);
+}
+
+.tarjeta h2 {
+  margin-top: 0;
+  color: #6d4c41;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid #8b5e3c;
+  border-radius: 8px;
+  background: #8b5e3c;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #6d4c41;
+  text-decoration: none;
+}
+
+.boton-secundario {
+  background: #8b5e3c;
+  color: #ffffff;
+}
+
+.boton-secundario:hover {
+  background: #6d4c41;
+  color: #ffffff;
+}
+
+.formulario {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.formulario label {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.formulario input,
+.formulario select {
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #cdb8a5;
+  border-radius: 6px;
+  background: #fffdfa;
+  color: #4e3b31;
+  font: inherit;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+  outline: 2px solid #8b5e3c;
+  outline-offset: 2px;
+}
+
+.mensaje {
+  padding: 12px;
+  border-radius: 6px;
+  background: #f3e5d8;
+  color: #6d4c41;
+}
+
+.tabla-contenedor {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ead9ca;
+  text-align: left;
+}
+
+th {
+  background: #f3e5d8;
+  color: #6d4c41;
+}
+
+.pie {
+  padding: 18px;
+  color: #6d4c41;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    width: min(100% - 20px, 1000px);
+    padding: 14px 0;
+  }
+
+  .tarjeta {
+    padding: 18px;
+  }
+
+  .acciones {
+    flex-direction: column;
+  }
+
+  .boton {
+    width: 100%;
+  }
+}
