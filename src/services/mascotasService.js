@@ -15,3 +15,12 @@ export async function registrarMascota(mascota) {
   const respuesta = await axios.post(API_URL, mascota)
   return respuesta.data
 }
+export async function actualizarMascota(id, mascota) {
+  const respuesta = await axios.put(`${API_URL}/${id}`, mascota)
+  return respuesta.data
+}
+
+export async function eliminarMascota(id) {
+  const respuesta = await axios.delete(`${API_URL}/${id}`)
+  return respuesta.data
+}

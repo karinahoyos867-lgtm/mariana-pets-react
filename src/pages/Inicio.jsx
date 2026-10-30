@@ -1,8 +1,6 @@
-
 import { Link } from 'react-router-dom'
 import '../App.css'
 
-// Pantalla de inicio de Mariana Pets.
 function Inicio() {
   return (
     <main className="contenedor">
@@ -14,16 +12,22 @@ function Inicio() {
       <section className="tarjeta">
         <h2>¡Bienvenidos!</h2>
         <p>
-          Administra la información de tus mascotas de forma sencilla.
+          Administra la información de tus mascotas y controla los productos
+          disponibles en la tienda.
         </p>
 
         <nav className="acciones" aria-label="Navegación principal">
+          <Link className="boton" to="/acceso">
+            Iniciar sesión o registrarse
+          </Link>
           <Link className="boton" to="/registro">
             Registrar mascota
           </Link>
-
           <Link className="boton boton-secundario" to="/mascotas">
             Consultar mascotas
+          </Link>
+          <Link className="boton" to="/productos">
+            Gestionar inventario
           </Link>
         </nav>
       </section>
